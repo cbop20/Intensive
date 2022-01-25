@@ -10,6 +10,7 @@ class Point{
         void translate(int iter);
         double distance(Point p2);
         
-        int getN(int n); //getters and setters
+        int getN(int n); //getters and setters 0 indexed
+        int getSize();//gets size of pos
         void setN(int dim,int n);
 };
