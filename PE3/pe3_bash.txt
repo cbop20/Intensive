@@ -1,0 +1,28 @@
+echo $SHELL
+1. mkdir -p root/{John/{Archive/Sem1/{Course1,Course2,Course3,Course4},Sem2/{Course1,Course2,Course3}},Alice/Sem2/{Course1,Course2,Course3,Course4}}
+2. pwd
+3. echo > John/Sem2/Course1/readme.txt
+4. cd John/Sem2/Course1  
+   ls readme*
+5. ls *.txt | wc -l
+6. echo "Coding course based in c++ focused on object oriented projects" > readme.txt
+   >> appends to a file, > overwrites a file
+7. mv readme.txt readme.me
+8. mkdir Assignment1
+   mv Assignment1 ../../../Alice/Sem2/Course1
+9. cd ../../../Alice/Sem2/Course1/Assignment1
+10. mkdir ../Assignment2
+11. cd ../Assignment2
+
+1. copies the next most recent command into the terminal 
+2. copies the next latest command into the ternimal
+3. reverse-i-search
+4. nanov
+    1. nano filename
+    2. ctrl+o
+    3. ctrl+x
+   v1
+    1. vi filename
+    2. :w
+    3. :q
+5. so that you don't have to open another application or if you can't open another application but need to edit a file
