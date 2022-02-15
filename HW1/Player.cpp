@@ -8,7 +8,8 @@ Player::Player(const std::string name, const bool is_human){
     
     name_ = name;
     points_ = 0;
-
+    pos_.row = 0;
+    pos_.col = 0; 
     is_human_ = is_human;
     has_Treasure_ = false;
     isDead_ = false;
@@ -22,8 +23,8 @@ void Player::SetPosition(Position pos){
     pos_= pos;
 };
 
-void Player::setHasTreasure(){
-    has_Treasure_ = true;
+void Player::setHasTreasure(bool treasure){
+    has_Treasure_ = treasure;
 };
 
 	//checks if the enemy is dead
@@ -36,18 +37,18 @@ void Player::setIsDead(bool isdead){
 	// ToRelativePosition is a function we used to translate positions
 	// into directions relative to the player (up, down, etc)
 string Player::ToRelativePosition(Position other){
-    int delX = pos.row - pos_.row;
-    int delY = pos.col - pos_.col;
+    int delX = other.row - pos_.row;
+    int delY = other.col - pos_.col;
     if(delX > 0){
-        return("right")
+        return("right");
     }
     if(delX < 0){
-        return("left") 
+        return("left");
     }
     if(delY > 0){
-        return("up")
+        return("down");
     }
     else{
-        return("down")
+        return("up");
     }
 };

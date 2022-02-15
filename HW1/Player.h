@@ -32,7 +32,7 @@ public:
 	void SetPosition(Position pos);
 
 	// checks if the player owns a treasure
-	void setHasTreasure();
+	void setHasTreasure(bool treasure);
 
 	//checks if the enemy is dead
 	void setIsDead(bool isdead);
