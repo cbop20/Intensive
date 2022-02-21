@@ -1,0 +1,7 @@
+2. pwd
+4. echo >/root/John/Sem2/Course1/readme.txt
+5. ls *.txt | wc -l
+6. echo "This course is a thing" > /root/John/Sem2/Course1/readme.txt single > overites >> appends 
+7. rename readme.txt readme.me /root/John/Sem2/Course1/readme.txt
+8. mv Assignment1 /Alice/Sem2/Course1
+11.cd ../Assignment2
