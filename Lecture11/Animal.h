@@ -23,11 +23,29 @@ private:
 class Reptile : public Animal {
 public:
 	Reptile(std::string sound):
-	Animal(sound + " rawr!")
-	{}
+	Animal(sound + " rawr!"){}
 
 	int GetSpeed() { return 2; };
 
+};
+
+class Mammal: public Animal{
+	public:
+		Mammal(): Animal("fuzzy fuzz"){}
+
+		int GetSpeed(){return 3;}
+};
+
+class Bird: public Animal{
+	public:
+		Bird(): Animal("Tweet Tweet"){}
+		int GetSpeed(){return 5;}
+};
+
+class Turtle: public Reptile{
+	public:
+		Turtle(): Reptile("turtle turtle"){}
+		int GetSpeed() {return 1;}
 };
 
 // Define your animals here.
